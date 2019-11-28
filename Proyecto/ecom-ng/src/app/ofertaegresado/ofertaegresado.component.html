@@ -1,0 +1,18 @@
+<h1>Catalogo</h1>
+    <div class="row">
+      <div class="pelis" *ngFor="let f of list">
+          <img src="../../assets/imagenes/aea.jpg" alt="">
+            <p> {{ f.nombrepelicula }} </p>
+            <p>{{ f.codigo }}</p>
+            <p>{{ f.precio }}</p>
+            <button type="button" routerLink="/detallespeli/{{ f.id }}" routerLinkActive="active" class="btn btn-outline-info">Detalles</button>
+            <button type="button" (click)="delete(f.id)" class="btn btn-danger">Delete</button>
+      </div>
+    </div>
+
+  
+
+
+
+
+    
